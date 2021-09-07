@@ -6,6 +6,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.core.MediaType;
 
 import org.slf4j.Logger;
@@ -17,10 +18,10 @@ import app.components.CalculatorComponent;
 
 @Component
 @Path("/calculator")
-public class Controller {
+public class CalculatorController {
 	
 	
-	Logger logger = LoggerFactory.getLogger(Controller.class);
+	Logger logger = LoggerFactory.getLogger(CalculatorController.class);
 
 	
 	@Autowired
@@ -38,7 +39,7 @@ public class Controller {
 	@Path("/subtract")
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 	@Produces(MediaType.TEXT_PLAIN)
-	public double subtract(@QueryParam("a") double a, @QueryParam("b") double b)
+	public double subtract(@FormParam("a") double a, @FormParam("b") double b)
 	{
 		return calculator.subtract(a, b);
 	}
