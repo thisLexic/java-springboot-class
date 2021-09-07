@@ -2,3 +2,5 @@ vids
 .metadata
 
 SpringBootDependencies/
+
+*.zip
