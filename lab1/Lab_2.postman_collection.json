@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "93d3d0e7-1380-47ee-88cb-1b9552634ccc",
+		"name": "Lab_2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9998/remotecalc/add?a=16&b=8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9998",
+					"path": [
+						"remotecalc",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "16"
+						},
+						{
+							"key": "b",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Subtract",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "a",
+							"value": "16",
+							"type": "text"
+						},
+						{
+							"key": "b",
+							"value": "8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9998/remotecalc/subtract/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9998",
+					"path": [
+						"remotecalc",
+						"subtract",
+						""
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "16",
+							"disabled": true
+						},
+						{
+							"key": "b",
+							"value": "8",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Multiply",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9998/remotecalc/multiply?a=16&b=8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9998",
+					"path": [
+						"remotecalc",
+						"multiply"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "16"
+						},
+						{
+							"key": "b",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Divide",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9998/remotecalc/divide?a=16&b=8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9998",
+					"path": [
+						"remotecalc",
+						"divide"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "16"
+						},
+						{
+							"key": "b",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Square Root",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9998/remotecalc/sqrt?a=16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9998",
+					"path": [
+						"remotecalc",
+						"sqrt"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "16"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

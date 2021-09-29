@@ -1,6 +1,10 @@
 vids
+*.mp4
+*.pdf
+
 .metadata
 
 SpringBootDependencies/
+/unzip
 
 *.zip
