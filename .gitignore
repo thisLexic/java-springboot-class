@@ -1,6 +1,7 @@
 vids
 *.mp4
 *.pdf
+/submit
 
 .metadata
 
